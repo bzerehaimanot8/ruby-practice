@@ -185,3 +185,4 @@ def search_array(array, value)
 end
 values = [1,2,3,4,5]
 puts search_array(values, 2)
+

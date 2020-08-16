@@ -106,3 +106,57 @@ colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 #    nums.each {|b| puts b * 5}
 # end
 # multiply_each_by_five(nums)
+
+
+
+## SuperClass and subclass Practice
+
+# creation of phone superclass
+# class Phone
+#   # initialize method with phone_argument as parameter
+#   def initialize(phone_number)
+#     # @number is the label of this instance variable and phone_number is the parameter
+#     @number = phone_number
+#   end
+#   # call method that accepts a parameter equal to other_number
+#   def call(other_number)
+#     puts "Calling from #{@number} to #{other_number}."
+#   end
+#   def text(other_number, msg)
+#     puts "Sending text from #{@number} to #{other_number}."
+#     puts msg
+#   end
+# end
+# class IPhone < Phone
+#   def initialize(phone_number)
+#     super(phone_number)
+#     @fingerprint = nil
+#   end
+#   def set_fingerprint(fingerprint)
+#     @fingerprint = fingerprint
+#   end
+#   def unlock(fingerprint = nil)
+#     if fingerprint == @fingerprint
+#       puts "Phone unlocked because no fingerprint has not been set."
+#     end
+#     if fingerprint == @fingerprint
+#       puts "Phone unlocked. Fingerprint matches."
+#     else
+#       puts "Phone locked. Fingerprint doesn't match."
+#     end
+#   end
+# end
+# class AndroidPhone < Phone
+#   def initialize(phone_number)
+#     super(phone_number)
+#     @keyboard = "Default"
+#   end
+#   def set_keyboard(keyboard)
+#     @keyboard = keyboard
+#   end
+# end
+# iphone6 = IPhone.new(3476781232)
+# iphone6.call(3476781233)
+# iphone6.text(3476781233, "I'm on my way :)")
+# iphone6.set_fingerprint(1121)
+# iphone6.unlock(1121)
